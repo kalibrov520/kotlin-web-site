@@ -38,7 +38,7 @@ fun main() {
 ```
 {kotlin-runnable="true" kotlin-min-compiler-version="1.4"}
 
-Learn more about [Kotlin functional interfaces and SAM conversions](fun-interfaces.md).
+[Learn more about Kotlin functional interfaces and SAM conversions](fun-interfaces.md).
 
 ### Explicit API mode for library authors
 
@@ -102,7 +102,7 @@ with the value `strict` or `warning`.
 -Xexplicit-api={strict|warning}
 ```
 
-For more details about the explicit API mode, see the [KEEP](https://github.com/Kotlin/KEEP/blob/master/proposals/explicit-api-mode.md). 
+[Find more details about the explicit API mode in the KEEP](https://github.com/Kotlin/KEEP/blob/master/proposals/explicit-api-mode.md). 
 
 ### Mixing named and positional arguments
 
@@ -572,7 +572,7 @@ In 1.4.0, we've added a new mode for generating default methods: `-Xjvm-default=
 interfaces to `default` Java methods. For compatibility with the code that uses the interfaces compiled without `default`, 
 we also added `all-compatibility` mode. 
 
-For more information about default methods in the Java interop, see the [documentation](java-to-kotlin-interop.md#default-methods-in-interfaces) and 
+For more information about default methods in the Java interop, see the [interoperability documentation](java-to-kotlin-interop.md#default-methods-in-interfaces) and 
 [this blog post](https://blog.jetbrains.com/kotlin/2020/07/kotlin-1-4-m3-generating-default-methods-in-interfaces/). 
 
 ### Unified exception type for null checks
@@ -653,11 +653,11 @@ kotlin {
 }
 ```
 
-For more detailed information about how to configure the Kotlin/JS IR compiler backend, check out the [documentation](js-ir-compiler.md).
+For more detailed information about how to configure the new backend, check out the [Kotlin/JS IR compiler documentation](js-ir-compiler.md).
 
 With the new [@JsExport](js-to-kotlin-interop.md#jsexport-annotation) annotation and the ability to **[generate TypeScript definitions](js-ir-compiler.md#preview-generation-of-typescript-declaration-files-d-ts) from Kotlin code**, the Kotlin/JS IR compiler backend improves JavaScript & TypeScript interoperability. This also makes it easier to integrate Kotlin/JS code with existing tooling, to create **hybrid applications** and leverage code-sharing functionality in multiplatform projects.
 
-Learn more about the available features in the Kotlin/JS IR compiler backend in the [documentation](js-ir-compiler.md).
+[Learn more about the available features in the Kotlin/JS IR compiler backend](js-ir-compiler.md).
 
 ## Kotlin/Native
 
@@ -695,7 +695,7 @@ queryData(id: 17) { result, error in
 }
 ```
 
-For more information about using suspending functions in Swift and Objective-C, see the [documentation](native-objc-interop.md).
+[Learn more about using suspending functions in Swift and Objective-C](native-objc-interop.md).
 
 ### Objective-C generics support by default
 
@@ -713,7 +713,7 @@ kotlin {
 }
 ```
 
-Please note that all specifics and limitations listed in the [documentation](native-objc-interop.md#generics) are still valid.
+Please note that all specifics and limitations listed in the [documentation on interoperability with Objective-C](native-objc-interop.md#generics) are still valid.
 
 ### Exception handling in Objective-C/Swift interop
 
@@ -745,7 +745,7 @@ kotlin {
 }
 ```
 
-For more information about crash report symbolication, see the [documentation](native-ios-symbolication.md).
+[Learn more about crash report symbolication](native-ios-symbolication.md).
 
 ### Performance improvements
 
@@ -789,7 +789,7 @@ Depending on your needs, you can add dependencies between:
 Complete the initial configuration, and when you add a new dependency to `cocoapods`, just re-import the project in IntelliJ IDEA. 
 The new dependency will be added automatically. No additional steps are required.
 
-Learn [how to add dependencies](native-cocoapods.md).
+[Learn how to add dependencies](native-cocoapods.md).
 
 ## Kotlin Multiplatform
 
@@ -906,7 +906,7 @@ native targets. This can help you share more native code without being limited b
 No additional steps are required – everything is done automatically. IntelliJ IDEA will help you detect common declarations 
 that you can use in the shared code.
 
-Learn more about [usage of platform-dependent libraries](mpp-share-on-platforms.md#use-native-libraries-in-the-hierarchical-structure).
+[Learn more about usage of platform-dependent libraries](mpp-share-on-platforms.md#use-native-libraries-in-the-hierarchical-structure).
 
 ### Specifying dependencies only once
 
@@ -953,7 +953,7 @@ addressed later.
 If you need a dependency only for a specific platform, you can still use platform-specific variants of standard and kotlinx 
 libraries with such suffixes as `-jvm` or` -js`, for example `kotlinx-coroutines-core-jvm`. 
 
-Learn more about [configuring dependencies](gradle.md#configuring-dependencies).
+[Learn more about configuring dependencies](gradle.md#configuring-dependencies).
 
 ## Gradle project improvements
 
@@ -976,7 +976,7 @@ For platform-specific source sets, the corresponding platform-specific variant o
 library is added to the rest. The Kotlin Gradle plugin will select the appropriate JVM standard library depending on 
 the `kotlinOptions.jvmTarget` [compiler option](gradle.md#compiler-options) of your Gradle build script.
 
-Learn how to [change the default behavior](gradle.md#dependency-on-the-standard-library).
+[Learn how to change the default behavior](gradle.md#dependency-on-the-standard-library).
 
 ### Minimum Gradle version for Kotlin projects
 
@@ -1339,7 +1339,7 @@ In 1.4.0, we have added new features to improve your experience with delegated p
 Aside from the new API, we've made some optimizations that reduce the resulting bytecode size. These optimizations are
 described in [this blog post](https://blog.jetbrains.com/kotlin/2019/12/what-to-expect-in-kotlin-1-4-and-beyond/#delegated-properties). 
 
-For more information about delegated properties, see the [documentation](delegated-properties.md).
+[Learn more about delegated properties](delegated-properties.md).
 
 ### Converting from KType to Java Type
 
